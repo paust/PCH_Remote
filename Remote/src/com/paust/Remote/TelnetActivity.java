@@ -52,7 +52,7 @@ public class TelnetActivity extends AllActivity// implements TelnetConstants
 		}
 		mAlist.add(mTS.getVerzeichnis());
 		mLa.notifyDataSetChanged();
-		Toast.makeText(getApplicationContext(), "drinn", Toast.LENGTH_SHORT)
+		Toast.makeText(getApplicationContext(), "drinn en", Toast.LENGTH_SHORT)
 				.show();
 	}
 
