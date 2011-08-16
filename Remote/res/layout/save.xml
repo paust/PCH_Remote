@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    
+
+<TableLayout android:id="@+id/TableLayout01" android:layout_width="wrap_content" android:layout_height="wrap_content">
+<TableRow android:id="@+id/TableRow00" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1">
+<EditText android:id="@+id/editText1" android:layout_height="wrap_content" android:text="EditText" android:layout_width="wrap_content"></EditText>
+</TableRow>
+    
+<TableRow android:layout_width="wrap_content" android:id="@+id/TableRow01" android:layout_height="wrap_content" android:layout_weight="1">
+<ScrollView android:id="@+id/ScrollView01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scrollbars="horizontal|vertical">
+<TextView  
+    android:layout_height="wrap_content" 
+    android:text="@string/hello"
+    android:id="@+id/tv1" android:layout_width="wrap_content"/>
+</ScrollView>
+    </TableRow>
+<TableRow android:layout_width="wrap_content" android:id="@+id/TableRow02" android:layout_height="wrap_content" android:layout_weight="1">
+<ListView android:id="@+id/ListView01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="2"></ListView>
+    </TableRow>
+
+    <TableRow android:id="@+id/TableRow03" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+    <Button android:layout_height="wrap_content" android:id="@+id/button1" android:layout_width="wrap_content" android:text="@string/b2txt"></Button>
+    <Button android:layout_height="wrap_content" android:text="Butto2" android:id="@+id/button2" android:layout_width="wrap_content"></Button>
+    
+</TableRow>
+
+</TableLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>

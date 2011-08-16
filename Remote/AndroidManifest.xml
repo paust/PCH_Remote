@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.paust.Remote"
+      android:versionCode="1"
+      android:versionName="1.0">
+      <uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+<uses-sdk android:minSdkVersion="8"></uses-sdk> 
+      
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:debuggable="true">
+        <activity android:label="@string/app_name" android:name="TelnetActivity">
+        </activity>
+        <activity android:name="TextActivity" android:label="@string/app_name"></activity>
+        <activity android:name="TabWidget1" android:label="@string/app_name" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"></action>
+                <category android:name="android.intent.category.LAUNCHER"></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="RemoteActivity1" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"></activity>
+        <activity android:name="RemoteActivity2" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" android:label="@string/app_name"></activity>
+
+    </application>
+
+
+</manifest> 

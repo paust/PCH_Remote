@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+        <LinearLayout android:id="@+id/linearLayout7" android:layout_height="wrap_content" android:layout_width="match_parent">
+        <Button android:id="@+id/br_return" android:layout_height="wrap_content" android:text="@string/bt_return" android:layout_weight="1" android:layout_width="0dp" android:onClick="@string/btl_remote1"></Button>
+        <Button android:id="@+id/br_up" android:text="@string/bt_up" android:layout_height="wrap_content" android:layout_weight="1" android:layout_width="0dp" android:onClick="@string/btl_remote1"></Button>
+        <Button android:id="@+id/br_source" android:text="@string/bt_source" android:layout_height="wrap_content" android:layout_weight="1" android:layout_width="0dp" android:onClick="@string/btl_remote1"></Button>
+    </LinearLayout>
+        <LinearLayout android:id="@+id/linearLayout8" android:layout_height="wrap_content" android:layout_width="match_parent">
+        <Button android:id="@+id/br_left" android:layout_height="wrap_content" android:text="@string/bt_left" android:layout_weight="1" android:layout_width="0dp" android:onClick="@string/btl_remote1"></Button>
+        <Button android:id="@+id/br_ok" android:text="@string/bt_ok" android:layout_height="wrap_content" android:layout_weight="1" android:layout_width="0dp" android:onClick="@string/btl_remote1"></Button>
+        <Button android:id="@+id/br_right" android:text="@string/bt_right" android:layout_height="wrap_content" android:layout_weight="1" android:layout_width="0dp" android:onClick="@string/btl_remote1"></Button>
+    </LinearLayout>
+        <LinearLayout android:id="@+id/linearLayout9" android:layout_height="wrap_content" android:layout_width="match_parent">
+        <Button android:id="@+id/br_info" android:layout_height="wrap_content" android:text="@string/bt_info" android:layout_weight="1" android:layout_width="0dp" android:onClick="@string/btl_remote1"></Button>
+        <Button android:id="@+id/br_down" android:text="@string/bt_down" android:layout_height="wrap_content" android:layout_weight="1" android:layout_width="0dp" android:onClick="@string/btl_remote1"></Button>
+        <Button android:id="@+id/br_home" android:text="@string/bt_home" android:layout_height="wrap_content" android:layout_weight="1" android:layout_width="0dp" android:onClick="@string/btl_remote1"></Button>
+    </LinearLayout>
+        <LinearLayout android:id="@+id/linearLayout1" android:layout_height="wrap_content" android:layout_width="match_parent">
+        <Button android:id="@+id/br_menu" android:text="@string/bt_menu" android:layout_height="wrap_content" android:layout_weight="1" android:layout_width="0dp" android:onClick="@string/btl_remote1"></Button>
+        <Button android:id="@+id/br_prev" android:text="@string/bt_prev" android:layout_height="wrap_content" android:layout_weight="1" android:layout_width="0dp" android:onClick="@string/btl_remote1"></Button>
+        <Button android:id="@+id/br_play" android:text="@string/bt_play" android:layout_height="wrap_content" android:layout_weight="1" android:layout_width="0dp" android:onClick="@string/btl_remote1"></Button>
+        <Button android:id="@+id/br_next" android:text="@string/bt_next" android:layout_height="wrap_content" android:layout_weight="1" android:layout_width="0dp" android:onClick="@string/btl_remote1"></Button>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/linearLayout1" android:layout_height="wrap_content" android:layout_width="match_parent">
+        <Button android:id="@+id/br_title" android:text="@string/bt_title" android:layout_height="wrap_content" android:layout_weight="1" android:layout_width="0dp" android:onClick="@string/btl_remote1"></Button>
+        <Button android:id="@+id/br_rev" android:text="@string/bt_rev" android:layout_height="wrap_content" android:layout_weight="1" android:layout_width="0dp" android:onClick="@string/btl_remote1"></Button>
+        <Button android:id="@+id/br_stop" android:text="@string/bt_stop" android:layout_height="wrap_content" android:layout_weight="1" android:layout_width="0dp" android:onClick="@string/btl_remote1"></Button>
+        <Button android:id="@+id/br_fwd" android:text="@string/bt_fwd" android:layout_height="wrap_content" android:layout_weight="1" android:layout_width="0dp" android:onClick="@string/btl_remote1"></Button>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/linearLayout1" android:layout_height="wrap_content" android:layout_width="match_parent">
+        <Button android:id="@+id/br_repeat" android:text="@string/bt_repeat" android:layout_height="wrap_content" android:layout_weight="1" android:layout_width="0dp" android:onClick="@string/btl_remote1"></Button>
+        <Button android:id="@+id/br_angle" android:text="@string/bt_angle" android:layout_height="wrap_content" android:layout_weight="1" android:layout_width="0dp" android:onClick="@string/btl_remote1"></Button>
+        <Button android:id="@+id/br_pause" android:text="@string/bt_pause" android:layout_height="wrap_content" android:layout_weight="1" android:layout_width="0dp" android:onClick="@string/btl_remote1"></Button>
+        <Button android:id="@+id/br_slow" android:text="@string/bt_slow" android:layout_height="wrap_content" android:layout_weight="1" android:layout_width="0dp" android:onClick="@string/btl_remote1"></Button>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/linearLayout1" android:layout_height="wrap_content" android:layout_width="match_parent">
+        <Button android:id="@+id/br_seek" android:text="@string/bt_seek" android:layout_height="wrap_content" android:layout_weight="1" android:layout_width="0dp" android:onClick="@string/btl_remote1"></Button>
+        <Button android:id="@+id/br_audio" android:text="@string/bt_audio" android:layout_height="wrap_content" android:layout_weight="1" android:layout_width="0dp" android:onClick="@string/btl_remote1"></Button>
+        <Button android:id="@+id/br_subtitle" android:text="@string/bt_subtitle" android:layout_height="wrap_content" android:layout_weight="1" android:layout_width="0dp" android:onClick="@string/btl_remote1"></Button>
+        <Button android:id="@+id/br_zoom" android:text="@string/bt_zoom" android:layout_height="wrap_content" android:layout_weight="1" android:layout_width="0dp" android:onClick="@string/btl_remote1"></Button>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/linearLayout1" android:layout_height="wrap_content" android:layout_width="match_parent">
+        <Button android:id="@+id/br_red" android:text="@string/bt_red" android:layout_height="wrap_content" android:layout_weight="1" android:layout_width="0dp" android:onClick="@string/btl_remote1"></Button>
+        <Button android:id="@+id/br_green" android:text="@string/bt_green" android:layout_height="wrap_content" android:layout_weight="1" android:layout_width="0dp" android:onClick="@string/btl_remote1"></Button>
+        <Button android:id="@+id/br_yellow" android:text="@string/bt_yellow" android:layout_height="wrap_content" android:layout_weight="1" android:layout_width="0dp" android:onClick="@string/btl_remote1"></Button>
+        <Button android:id="@+id/br_blue" android:text="@string/bt_blue" android:layout_height="wrap_content" android:layout_weight="1" android:layout_width="0dp" android:onClick="@string/btl_remote1"></Button>
+        </LinearLayout>
+            
+</LinearLayout>
