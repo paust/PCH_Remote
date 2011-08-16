@@ -6,17 +6,7 @@
     
 
 <EditText android:id="@+id/editText1" android:text="EditText" android:layout_width="match_parent" android:layout_height="wrap_content"></EditText>
-<LinearLayout android:id="@+id/linearLayout1" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
-    <Button android:layout_weight="1" android:id="@+id/button1" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="sendcmd"></Button>
-    <Button android:layout_weight="1" android:id="@+id/button2" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="refresh"></Button>
-</LinearLayout>
-    
-<ScrollView android:id="@+id/ScrollView01" android:scrollbars="horizontal|vertical" android:layout_weight="1" android:layout_height="20dip" android:layout_width="match_parent">
-<TextView  
-    android:layout_height="wrap_content" 
-    android:text="@string/hello"
-    android:id="@+id/tv1" android:layout_width="wrap_content"/>
-</ScrollView>
+
 <ListView android:id="@+id/ListView01" android:layout_height="50dip" android:layout_width="match_parent" android:layout_weight="3"></ListView>
 
     

@@ -35,7 +35,7 @@ public class TelnetActivity extends AllActivity// implements TelnetConstants
 		if (D)
 			Log.d(TAG, "updateText() ");
 
-		mTv1.setText(mTS.getText());
+//		mTv1.setText(mTS.getText());
 	}
 
 	@Override
@@ -63,7 +63,7 @@ public class TelnetActivity extends AllActivity// implements TelnetConstants
 			Log.d(TAG, "onCreate() ");
 		setContentView(R.layout.main);
 		mEditText = (EditText) findViewById(R.id.editText1);
-		mTv1 = (TextView) findViewById(R.id.tv1);
+//		mTv1 = (TextView) findViewById(R.id.tv1);
 		mLv = (ListView) findViewById(R.id.ListView01);
 		mLv.setTextFilterEnabled(true);
 		mLv.setOnItemClickListener(new OnItemClickListener() {
@@ -79,10 +79,10 @@ public class TelnetActivity extends AllActivity// implements TelnetConstants
 				filename = new String(mAlist.get(arg2));
 				final String promt = " # ";
 				verzeichnis = new String(mTS.getVerzeichnis().replaceFirst(promt, ""));
-				fullfilename = mTS.getVerzeichnis().replaceFirst(promt, "")
-						+ "/" + filename;
+				fullfilename = "\"" + mTS.getVerzeichnis().replaceFirst(promt, "")
+						+ "/" + filename +"\"";
 			if (filename.endsWith("VIDEO_TS/") ) {
-				command = "busybox26 sh /opt/sybhttpd/localhost.drives/HARD_DISK/a_start_dvd.sh" + verzeichnis
+				command = "busybox26 sh /opt/sybhttpd/localhost.drives/HARD_DISK/a_start_dvd.sh " + verzeichnis
 						+ TelNetService.CR + TelNetService.lscmd + TelNetService.CR;
 			} else if (filename.endsWith("/")) {
 					filename = filename.replaceFirst("/", "");
@@ -91,13 +91,13 @@ public class TelnetActivity extends AllActivity// implements TelnetConstants
 					filename = filename.replaceFirst("@", "");
 					command = "cd \"" + filename + "\"" + TelNetService.CR + TelNetService.lscmd + TelNetService.CR;
 				} else if (filename.endsWith(".iso")) {
-					command = "busybox26 sh /opt/sybhttpd/localhost.drives/HARD_DISK/a_start_iso.sh" + fullfilename
+					command = "busybox26 sh /opt/sybhttpd/localhost.drives/HARD_DISK/a_start_iso.sh " + fullfilename
 							+ TelNetService.CR + TelNetService.lscmd + TelNetService.CR;
 				} else if (filename.endsWith(".avi") || filename.endsWith(".mpg") || filename.endsWith(".mpeg")) {
-					command = "busybox26 sh /opt/sybhttpd/localhost.drives/HARD_DISK/a_start_video.sh" + fullfilename
+					command = "busybox26 sh /opt/sybhttpd/localhost.drives/HARD_DISK/a_start_video.sh " + fullfilename
 							+ TelNetService.CR + TelNetService.lscmd + TelNetService.CR;
 				} else if (filename.endsWith(".mp3") ) {
-					command = "busybox26 sh /opt/sybhttpd/localhost.drives/HARD_DISK/a_start_mp3.sh" + fullfilename
+					command = "busybox26 sh /opt/sybhttpd/localhost.drives/HARD_DISK/a_start_mp3.sh " + fullfilename
 							+ TelNetService.CR + TelNetService.lscmd + TelNetService.CR;
 				} else
 
@@ -121,26 +121,26 @@ public class TelnetActivity extends AllActivity// implements TelnetConstants
 		mTS.addText("Start");
 		updateText();
 		mEditText.setText("ls -l");
-		mButton2 = (Button) findViewById(R.id.button2);
-		mButton2.setOnClickListener(new View.OnClickListener() {
-			public void onClick(View v) {
-
-				updateText();
-				updateList();
-				mTS.setText("");
-			} // onclick
-		}); // onclicklistener
-
-		mButton = (Button) findViewById(R.id.button1);
-		mButton.setOnClickListener(new View.OnClickListener() {
-			public void onClick(View v) {
-				mTS.addText("\nbutton");
-				updateText();
-				mTS.write(mEditText.getText() + TelNetService.CR);
-
-				// Perform action on click
-			} // onclick
-		}); // onclicklistener
+//		mButton2 = (Button) findViewById(R.id.button2);
+//		mButton2.setOnClickListener(new View.OnClickListener() {
+//			public void onClick(View v) {
+//
+//				updateText();
+//				updateList();
+//				mTS.setText("");
+//			} // onclick
+//		}); // onclicklistener
+//
+//		mButton = (Button) findViewById(R.id.button1);
+//		mButton.setOnClickListener(new View.OnClickListener() {
+//			public void onClick(View v) {
+//				mTS.addText("\nbutton");
+//				updateText();
+//				mTS.write(mEditText.getText() + TelNetService.CR);
+//
+//				// Perform action on click
+//			} // onclick
+//		}); // onclicklistener
 
 	} // onCreate
 
